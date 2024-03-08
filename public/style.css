@@ -1,0 +1,85 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.header,
+.footer {
+  background-color: #79a06f;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.nav {
+  background-color: #36622b;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.nav a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.nav a:hover {
+  background-color: #4f6d54;
+}
+
+.content {
+  padding: 20px;
+  text-align: center;
+}
+
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+
+  max-height: 100vh; /* Adjust based on your layout needs */
+  padding: 20px;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 0 0 calc(20% - 10px); /* Adjusted for 5 items in a row with margin */
+  margin: 5px;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  border-radius: 10px;
+  margin: 15px;
+}
+
+.card_image {
+  width: 100%;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons a {
+  background-color: #9e0000;
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.product-text {
+  /* New class for wrapping text content */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}

@@ -1,0 +1,28 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Local Farmers Market
+    link(rel="stylesheet", href="/style.css")
+  body
+    .header
+      h1 Welcome to the Local Farmers Market
+    .nav
+      a(href="/") Home
+      a(href="/create") Sale Product
+    .content
+      h2 Fresh Produce, Directly From Local Farmers
+      p Explore a wide variety of fresh fruits, vegetables, and handcrafted products. Support local agriculture and enjoy the taste of freshness.
+      .product-container
+        each product in products
+          .product-card
+            img(src=`/image/${product.image}` alt="" class="card_image")
+            .product_text
+              h3= product.name
+              p Price: $#{product.price}
+              .buttons
+                // Removed the Edit link
+                a(href=`/delete/${product.id}` class="cart") Remove
+    .footer
+      p This web application was created to fulfill Web Technology module’s requirements and does not represent an actual company or service
