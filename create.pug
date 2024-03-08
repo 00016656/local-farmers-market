@@ -1,0 +1,23 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Create Product - Local Farmers Market
+    link(rel="stylesheet", href="/create.css")
+  body
+    .nav
+      a(href="/") Home
+      a(href="/create") Sale Product
+    .container
+      h2 Create New Product
+      form#productForm(action="/create-product", method="post")
+        .form-group
+          label(for="productName") Product Name
+          input(type="text", id="productName", name="productName", required)
+        .form-group
+          label(for="productPrice") Price
+          // Added step, min attributes for validation
+          input(type="number", id="productPrice", name="productPrice", required, min="0.01", step="0.01")
+        .form-group
+          button(type="submit") Create Product
