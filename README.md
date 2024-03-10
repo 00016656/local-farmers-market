@@ -36,3 +36,19 @@ node app.js
 ```bash
 git clone https://github.com/00016656/local-farmers-market
 ```
+
+### Project Structure
+
+```plaintext
+/your-project-name
+|-- /node_modules                # Node.js modules
+|-- /public                      # Public static files
+|   |-- /css                     # CSS files
+|   |-- /image                   # Image files
+|-- /views                       # Pug templates
+|-- app.js                       # Main application file
+|-- package.json                 # Node.js dependencies and scripts
+|-- README.md                    # Project documentation
+```
+
+P.S. Unfortunately, some pictures was demoved due to the size of the project
